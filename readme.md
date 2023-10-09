@@ -1,7 +1,7 @@
 ## 準備
 必要なライブラリをインストール
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## 実行
