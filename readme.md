@@ -1,5 +1,4 @@
 ## 準備
-## 準備
 必要なライブラリをインストール
 ```
 pip install requirements.txt
