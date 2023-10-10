@@ -12,7 +12,7 @@ def setting():
         print("準備ができたら[ctrl]を長押ししてください。")
         print("マウス左ボタンで範囲を指定して、スペースで決定します。")
         print("ESCで作業を中断できます。")
-        Image.open(f"imgs/sample/{i}.jpg").show("サンプル画像")
+        Image.open(f"imgs/sample/{i}.png").show("サンプル画像")
         while not keyboard.is_pressed("ctrl"):
             if keyboard.is_pressed("esc"):
                 return
