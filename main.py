@@ -45,7 +45,7 @@ while True:
 def click(img_path,**args):
     box = pag.locateOnScreen(img_path,**args)
     if box:
-        pag.click(pag.cctrl(box))
+        pag.click(pag.center(box))
         return True
     else:
         return False
