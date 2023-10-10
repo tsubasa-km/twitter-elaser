@@ -14,10 +14,10 @@ def exit():
     print(f"{deleted_n}")
     sys.exit()
 
-print("RTボタンにポインタをおいてEnterを押してください。")
+print("RTボタンにポインタをおいてctrlを押してください。")
 while True:
     if keyboard.is_pressed("esc"): exit()
-    if keyboard.is_pressed("enter"):
+    if keyboard.is_pressed("ctrl"):
         pos = pag.position()
         pag.move(100,0)
         pag.sleep(1)
@@ -28,10 +28,10 @@ while True:
         else:
             print("Not found active RT button.")
 
-print("...ボタンにポインタをおいてEnterを押してください。")
+print("...ボタンにポインタをおいてctrlを押してください。")
 while True:
     if keyboard.is_pressed("esc"): exit()
-    if keyboard.is_pressed("enter"):
+    if keyboard.is_pressed("ctrl"):
         pos = pag.position()
         pag.move(100,0)
         pag.sleep(1)
@@ -45,7 +45,7 @@ while True:
 def click(img_path,**args):
     box = pag.locateOnScreen(img_path,**args)
     if box:
-        pag.click(pag.center(box))
+        pag.click(pag.cctrl(box))
         return True
     else:
         return False
